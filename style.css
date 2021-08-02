@@ -1,0 +1,104 @@
+*, 
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;     
+}
+.radio-input {
+    display: none;
+}
+body {
+    background: #1f4037;  
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.wrapper {    
+    max-width: 700px;
+    width: 100%;
+    height: 300px; 
+    border-radius: 5px;
+    background: #fff;   
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: column;
+    float: none;
+    
+}
+.wrapper header {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.navbar {   
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;   
+}
+.navbar-label {
+    width: 100%;   
+    display: flex;
+    justify-content: space-around;
+    transition: all 2s ease;
+}
+.navbar-label label {   
+    width: 50%;
+    height: 50px;   
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    color:#000;
+    font-size: 17px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+   transition: all 0.3s ease-in-out;
+}
+.navbar-label i {
+    padding:10px;
+}
+#roman:checked ~  .box .toRoman {
+    display: none;
+}
+#decimal:checked ~  .box .toDecimal {
+    display: none;
+  }
+  #decimal:checked ~ .navbar-label .decimal {
+    background: #99f2c8;
+  }
+  #roman:checked ~ .navbar-label .roman {
+    background: #99f2c8;
+  }
+.wrapper nav label:hover{
+    background: rgba(23,162,184,0.3);
+  }
+.box {   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;  
+}
+.convert {   
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    }
+    .convert h2 {
+       color:#1f4037 ;       
+    }
+    .convert input {
+        height: 30px;
+      
+    }
+    .convert input:focus {
+      color: red;
+    }
+

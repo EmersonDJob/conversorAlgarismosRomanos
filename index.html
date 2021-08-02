@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Roman To Decimal</title>
+</head>
+<body>
+    <div class="wrapper">
+            <header>Convert Roman Number  to Decimal </header>
+            <nav class="navbar" >       
+                <input type="radio" class="radio-input" name="slider" id="roman" >
+                <input type="radio"  class="radio-input" name="slider" id="decimal" checked>
+
+                <div class="navbar-label">
+                    <label for="roman" class="roman">Roman<i class="fas fa-exchange-alt"></i>Decimal</label>    
+                    <label for="decimal" class="decimal">Decimal<i class="fas fa-exchange-alt"></i>Roman</label>                    
+                </div>
+
+                <div class="box">
+                    <div class="toDecimal convert">                       
+                        <h2>Algarismo Romano</h2>
+                        <div>
+                            <input type="number"  name="" id="romanid" max="3.999" >                            
+                        </div>
+                        <div>
+                            <input type="text" name="" id="romanresult">
+                        </div>
+                    </div>
+                    <div class="toRoman convert">
+                        <div>
+                            <h2>Decimal</h2>                            
+                        </div>
+                        <div>
+                            <input type="text" name="" id="decimalid">
+                        </div>
+                        <div>
+                            <input type="text" name="" id="decimalresult">
+                        </div>
+                        
+                    </div>                     
+                </div>
+        </nav>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
